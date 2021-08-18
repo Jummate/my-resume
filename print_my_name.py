@@ -1,0 +1,2 @@
+
+print("Omololu Jumat")

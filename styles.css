@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body, #main-container{
+    width:100%;
+    height:100%;
+    font-family: 'Century Gothic','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main-container{
+    overflow-y:auto;
+   
+}
+body{
+    background-image: url('./images/hng_as_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#000, purple);
+    color:#fff;
+    align-items:center;
+    justify-content: center; 
+    height:30%;
+    width:100%;
+    padding-bottom: 2px;
+}
+#cont-logo{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:90%;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img{
+    width:120px;
+    height:60px;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width:100%;
+    height:10%;
+    padding-right: 5px;
+}
+nav ul{
+    color:#fff;
+    display:flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+nav li{
+    cursor: pointer;
+    font-size: 0.85rem;
+    list-style: none;
+    margin-right:10px;
+}
+nav li:hover{
+   text-shadow: 1px 1px 2px red, -1px -1px 2px red;
+}
+nav li:active{
+    text-decoration:underline;
+ }
+nav li:last-child{
+    margin-right: 0;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:62%;
+    width:100%;
+    background-color:#fff;
+    overflow-y: auto;
+   
+}
+.caption{
+    color:purple;
+    width:100%;
+    text-align: right;
+}
+.page-section{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:95%;
+    margin:0 auto;
+    margin-top:15px;
+    box-shadow:1px 1px 2px gray, -1px -1px 2px gray;
+    border-radius:10px;
+    padding: 10px;
+    color:purple;
+}
+#about-me{
+    align-items: center;
+}
+#cont-about-me-text{
+    margin-top: 15px;
+    padding:15px 7px;
+    line-height:1.8;
+    color:purple;
+    letter-spacing: 1.1px;
+}
+
+#about-me-text{
+    text-align: left;
+    font-size:0.9pc;
+}
+#myphoto{
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    border: 1px dotted purple;
+}
+#skills{
+    color:purple;
+}
+.skills-wrapper{
+    width:100%;
+    margin-bottom:20px;
+}
+.languages{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+.tool{
+	background-color: rgb(75, 17, 75);
+	color:#fff;
+	padding:10px;
+	border-radius:3px;
+	font-size:0.7rem;
+	font-weight:bolder;
+	margin-right:10px;
+	margin-top:15px;
+	align-items:center;
+}
+
+.project-description-text{
+    font-size:0.9rem;
+    margin-left:2px;
+    padding:0 15px;
+    line-height:30px;
+}
+.view-site-button{
+	background-color:#653354;
+	color:white;
+	padding:15px;
+	width:90%;
+	margin:30px 5%;
+	font-weight:bolder;
+	font-size:1.3rem;
+	border-radius:30px;
+	cursor:pointer;
+	outline:none;
+	border:none;
+	box-shadow:1px 1px 4px gray, -1px -1px 4px gray;
+	transition: background-color 0.1s linear 0s;
+}
+.view-site-button:hover{
+	background-color: #331E2A;
+}
+.view-site-button:active{
+	background-color: #000;
+}
+#contacts{
+    margin-bottom: 15px;
+}
+#contact-text{
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	line-height:2.0;
+	flex-wrap:wrap;
+	padding-left:30px;
+	letter-spacing:1.1px;
+}
+.contact-item{
+	margin-top:30px;
+}
+.contact-item p{
+    font-size:0.9rem;
+}
+footer{
+    height:8%;
+    width:100%;
+    background-color: purple;
+    display:flex;
+    flex-direction: column;
+    color:white;
+    align-items: center;
+    justify-content: center;
+}
+#myname{
+    font-size: 1.0rem;
+    text-shadow:2px 2px 2px red, -2px -2px 2px red;
+}
+@media screen and (min-width: 767px){
+    #main-container{
+        max-width:900px;
+        margin: 0 auto;
+    }
+    #contact-text{
+		flex-direction:row;
+		justify-content:space-around;
+	}
+}
