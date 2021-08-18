@@ -72,7 +72,7 @@ nav li:last-child{
     margin-right: 0;
 }
 
-a{
+nav a{
     text-decoration: none;
     color:#fff;
 }
@@ -192,6 +192,16 @@ main{
 }
 .contact-item p{
     font-size:0.9rem;
+}
+#social-media a{
+    color: gray;
+}
+.social{
+    margin-right:20px;
+    font-size:1.5rem;
+}
+.social:hover{
+    color:purple;
 }
 footer{
     height:8%;
