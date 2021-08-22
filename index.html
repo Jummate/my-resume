@@ -10,29 +10,58 @@
     </head>
     <body>
         <div id="main-container">
+                <nav>
+                    <img src="./images/hng.png" id="hng-logo" alt="HNG Logo"/> 
+                    <div id="nav-larger-screen">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about-me">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contacts">Contact</a></li>
+                    </div>
+                    <div id="hamburger-wrapper">
+                            <i class="fa fa-bars open-menu"></i>
+                    </div>
+                </nav>
+                <div id="nav-smaller-screen">
+                        <div id="my-profile">
+                            <img src="./images/myphoto2.jpg" id="profile-photo"alt="My Photo"/>
+                            <h2>Omololu Jumat</h2>
+                        </div>
+                        <div id="profile-nav">
+                            <ul>
+                                <li class="home"><a href="#"><i class="fa fa-home icon"></i> Home</a></li>
+                                <li class="about"><a href="#about-me"><i class="fa fa-user icon"></i> About</a></li>
+                                <li class="about"><a href="#skills"><i class="fa fa-wrench icon"></i> Skills</a></li>
+                                <li class="projects"><a href="#projects"><i class="fa fa-briefcase icon"></i> Projects</a></li>
+                                <li class="contact"><a href="#contacts"><i class="fa fa-envelope icon"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
             <header>
                 <div id="cont-logo">
-                    <a href="index.html"><span id="logo"><img src="./images/hng.png" alt="HNG Logo"/></span></a>
+                    <a href="index.html"><span id="logo"><img src="./images/myphoto2.jpg" alt="My Photo"/></span></a>
                     <h1>Omololu Jumat</h1>
+                    <p>Frontend Developer</p>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#hobbies">Hobbies</a></li>
-                        <li><a href="#contacts">Contact</a></li>
-                    </ul>
-                </nav>
             </header>
+           
             <main>
                 <section id="about-me" class="page-section">
                     <div class="caption"><small>Meet Me</small></div>
-                    <img src="./images/myphoto.jpg" alt="A photo of mine" id="myphoto"/>
+                    <img src="./images/myphoto2.jpg" alt="A photo of mine" id="myphoto"/>
                     <div id="cont-about-me-text">
                         <h2 id="about-me-heading">Hi, I am Omololu Jumat.</h2>
                         <p id="about-me-text">I am a budding Frontend Developer. I am highly passionate about building responsive websites/apps
-                        with modern technologies.</p>
+                        with modern technologies. I specialise in transforming mock-up design into websites/apps.</p>
                     </div>
+                    <article class="skills-wrapper">
+                            <h3>Hobbies</h3>
+                            <div class="languages">
+                                <span class="tool">Solving Sudoku and Puzzles</span> <span class="tool">Listening to music</span> <span class="tool">Singing</span> 
+                                <span class="tool">Researching and Writing</span> <span class="tool">Soccer</span> 
+                            </div>
+                        </article>
                 </section>
                 <section id="skills" class="page-section">
                     <div class="caption"><small>Skills</small></div>
@@ -60,76 +89,72 @@
                     </div>
                 </section>
                 <section id="projects" class="page-section">
-                        <div class="caption"><small>Projects</small></div>
-                        <article class="project-wrapper">
-                            <h3>Marketeer</h3>
-                            <p class="project-description-text">
-                                An e-commerce website with full authentication for log-in, sign-in and sign-up.<br>
+                    <div class="caption"><small>Projects</small></div>
+                    <article class="project-wrapper">
+                        <h3>Marketeer</h3>
+                        <p class="project-description-text">
+                            An e-commerce website with full authentication for log-in, sign-in and sign-up.<br>
 
-                                <strong>Tools used:</strong> HTML, CSS, Bootstrap, JQuery, Vanilla JavaScript
-                                
-                            </p>
-                            <a href="https://jummate.github.io/Marketeer" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
-                        </article>
-                        <article class="project-wrapper">
-                            <h3>Bricademia</h3>
-                            <p class="project-description-text">
-                                    This web app offers an interface for users to write time-based tests on
-                                    subjects available. <br>
+                            <strong>Technologies used:</strong> HTML, CSS, Bootstrap, JQuery, Vanilla JavaScript
+                            
+                        </p>
+                        <a href="https://jummate.github.io/Marketeer" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
+                    </article>
+                    <article class="project-wrapper">
+                        <h3>Bricademia</h3>
+                        <p class="project-description-text">
+                                This web app offers an interface for users to write time-based tests on
+                                subjects available. <br>
 
-                                <strong>Tools used:</strong> HTML, CSS, Vanilla JavaScript
-                                
-                            </p>
-                            <a href="https://jummate.github.io/ExamPortal" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
-                        </article>
-                        <article class="project-wrapper">
-                            <h3>Currency Converter</h3>
-                            <p class="project-description-text">
-                                    This API-served web app makes conversion between different currencies a walk in the park.<br>
+                            <strong>Technologies used:</strong> HTML, CSS, Vanilla JavaScript
+                            
+                        </p>
+                        <a href="https://jummate.github.io/ExamPortal" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
+                    </article>
+                    <article class="project-wrapper">
+                        <h3>Currency Converter</h3>
+                        <p class="project-description-text">
+                                This API-served web app makes conversion between different currencies a walk in the park.<br>
 
-                                <strong>Tools used:</strong> HTML, CSS, Vanilla JavaScript, Currency Converter API
-                                
-                            </p>
-                            <a href="https://jummate.github.io/currency-converter" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
-                            </article>
-                    </section>
-                    <section id="hobbies" class="page-section">
-                        <div class="caption"><small>Hobbies</small></div>
-                        <article class="skills-wrapper">
-                            <h3>Hobbies</h3>
-                            <div class="languages">
-                                <span class="tool">Solving Sudoku and Puzzles</span> <span class="tool">Listening to music</span> <span class="tool">Singing</span> 
-                                <span class="tool">Researching and Writing</span> <span class="tool">Soccer</span> 
-                            </div>
+                            <strong>Technologies used:</strong> HTML, CSS, Vanilla JavaScript, Currency Converter API
+                            
+                        </p>
+                        <a href="https://jummate.github.io/currency-converter" title="View the site"><button type="button" class="view-site-button">Explore The Site</button></a>
                         </article>
-                    </section>
-                    <section id="contacts" class="page-section">
-                        <div class="caption"><small>Get in touch</small></div>
-                        <div id="contact-text">
-							<div class="contact-item">
-								<h3>Email Address</h3>
-                                <p>yakubjumat@gmail.com</p>
-                                <p>jumatyakub@gmail.com</p>
-							</div>
-							<div class="contact-item">
-								<h3>Phone Number</h3>
-								<p>+2347067896279</p>
-								<p>+2348116566525</p>
-							</div>
-							<div class="contact-item">
-								<h3>My Address</h3>
-								<p>Ogun State, Nigeria</p>
-                            </div>
-                            <div class="contact-item">
-								<h3>Social Media</h3>
-								<p id="social-media"><a href="#"><i class="fa fa-github social"></i></a><a href="#"><i class="fa fa-whatsapp social"></i></a><a href="#"><i class="fa fa-linkedin social"></i></a><a href="#"><i class="fa fa-telegram social"></i></a></p>
-							</div>
-						</div>
-                    </section>
+                </section>
+                    
+                <section id="contacts" class="page-section">
+                    <div class="caption"><small>Get in touch</small></div>
+                    <div id="contact-text">
+                        <div class="contact-item">
+                            <h3>Email Address</h3>
+                            <p>yakubjumat@gmail.com</p>
+                            <p>jumatyakub@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Phone Number</h3>
+                            <p>+2347067896279</p>
+                            <p>+2348116566525</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>My Address</h3>
+                            <p>Ogun State, Nigeria</p>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer>
-                <p><small>Designed by <span id="myname">Omololu Jumat</span> &copy; 2021</small></p>
+                    <div id="social-media">
+                        <a href="#"><i class="fa fa-github social"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp social"></i></a>
+                        <a href="#"><i class="fa fa-linkedin social"></i></a>
+                        <a href="#"><i class="fa fa-telegram social"></i></a>
+                    </div>
+                    <div id="footer-text">
+                        <p>Designed by <span id="myname">Omololu Jumat</span> &copy; 2021</p>
+                    </div>
             </footer>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
