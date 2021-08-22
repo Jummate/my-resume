@@ -14,7 +14,6 @@ _("#hamburger-wrapper").addEventListener("click",() => {
 		_(".open-menu").style.transform = "rotate(180deg)";
 		_(".open-menu").style.transition = "transform 0.7s ease";
         _("#nav-smaller-screen").style.animation = "appear-slowly 0.7s ease";
-        _("body").style.overflowY = "hidden";
 		pressedToggle = false;
 	}
 	else
@@ -26,7 +25,6 @@ _("#hamburger-wrapper").addEventListener("click",() => {
 		},500);
 		_(".open-menu").style.transform = "rotate(-180deg)";
         _(".open-menu").style.transition = "transform 0.7s ease";
-         _("body").style.overflowY = "scroll";
 		pressedToggle = true;
     }
 })
